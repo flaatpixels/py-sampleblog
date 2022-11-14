@@ -1,9 +1,9 @@
-{% if latest_articles_list %}
+{% if articles %}
     <ul>
-    {% for article in latest_articles_list %}
+    {% for article in articles %}
         <li><a href="/articles/{{ article.id }}">{{ article.title }}</a></li>
     {% endfor %}
     </ul>
 {% else %}
-    <p>No polls are available.</p>
+    <p>No articles are available.</p>
 {% endif %}
