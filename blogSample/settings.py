@@ -31,6 +31,7 @@ APPEND_SLASH = False
 # Application definition
 
 INSTALLED_APPS = [
+    'django_seed',
     'django_dump_die',
     'blog.apps.BlogConfig',
     'django.contrib.admin',
