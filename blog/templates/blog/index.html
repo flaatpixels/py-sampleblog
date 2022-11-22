@@ -7,7 +7,7 @@
       <div class="card mt-3">
         {#<img class="card-img-top" src="..." alt="Card image cap">#}
         <div class="card-body">
-          <h5 class="card-title">{{ article.title }}</h5>
+          <h5 class="card-title">{{ article.title }} - {{article.publish_at | date:"c"}}</h5>
           <p class="card-text">{{ article.content }}</p>
           <a href="{% url 'article_detail' article.id %}" class="btn btn-primary">Read</a>
         </div>
