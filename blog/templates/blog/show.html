@@ -1,8 +1,9 @@
 {% extends 'base.html' %}
+{% load markdownify %}
 
 {% block body %}
     <h1>{{ article.title }}</h1>
     <p>
-        {{ article.content }}
+        {{ article.content | markdownify }}
     </p>
 {% endblock %}
