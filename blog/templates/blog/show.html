@@ -2,8 +2,10 @@
 {% load markdownify %}
 
 {% block body %}
-    <h1>{{ article.title }}</h1>
-    <p>
-        {{ article.content | markdownify }}
-    </p>
+    <div class="container-sm mt-5 col-sm-6 col-lg-8">
+        <h1 class="h1 mb-3">{{ article.title }}</h1>
+        <p>
+            {{ article.content | markdownify }}
+        </p>
+    </div>
 {% endblock %}

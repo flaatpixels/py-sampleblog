@@ -11,15 +11,12 @@
 
       <nav class="navbar navbar-expand-lg navbar-dark bd-navbar bg-dark sticky-top">
          <div class="container-xxl bd-gutter flex-wrap flex-lg-nowrap">
-            <a class="navbar-brand" href="#">Sample Blog</a>
+            <a class="navbar-brand" href="{% url 'index' %}">Sample Blog</a>
 
             <div class="collapse navbar-collapse" id="navbarText">
                <ul class="navbar-nav">
                   <li class="nav-item">
                      <a class="nav-link" href="{% url 'index' %}">Articles</a>
-                   </li>
-                   <li class="nav-item">
-                     <a class="nav-link" href="#">Comments</a>
                    </li>
                </ul>
             </div>
