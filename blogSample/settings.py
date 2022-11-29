@@ -27,10 +27,12 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 APPEND_SLASH = False
+LOGOUT_REDIRECT_URL = 'index'
 
 # Application definition
 
 INSTALLED_APPS = [
+    'django_extensions',
     'mdeditor',
     'django_seed',
     'django_dump_die',

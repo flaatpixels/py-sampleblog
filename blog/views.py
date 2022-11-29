@@ -1,5 +1,5 @@
 from .models import Article
-from django.views.generic import ListView, DetailView
+from django.views.generic import ListView, DetailView, DeleteView
 
 class ArticlesListView(ListView):
     paginate_by = 15
@@ -14,3 +14,8 @@ class ArticleDetailView(DetailView):
     model = Article
     template_name = 'blog/show.html'
     context_object_name = 'article'
+
+class ArticleDeleteView(DeleteView):
+    model = Article
+    success_url ="/"
+    template_name = "blog/confirm_delete.html"
